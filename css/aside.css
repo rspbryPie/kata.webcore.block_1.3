@@ -47,23 +47,24 @@ html {
     font-style: normal;
 }
 
-html, body {
-    max-width: 320px;
-    /* position: relative; */
+body {
+    min-width: 320px;
+    background-color: #F2F2F2;;
 }
 
 .wrapper {
-    /* display: block;
-    /* position: absolute; */
+    
+    position: absolute;
     height: 1024px;
     width: 320px;
-    /* top: 0; */
-    /* left: 0; */
+    top: 0; 
+    left: 0; 
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     font-family: 'TT Lakes';
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+    background-color: #fff;
 }
 
 .wrapper a {
