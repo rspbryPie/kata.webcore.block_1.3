@@ -1,0 +1,223 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+        }
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body {
+    max-width: 320px;
+    /* position: relative; */
+}
+
+.wrapper {
+    /* display: block;
+    /* position: absolute; */
+    height: 1024px;
+    width: 320px;
+    /* top: 0; */
+    /* left: 0; */
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.burger-head {
+    height: 88px;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__btn {
+    margin: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.main__btn:hover {
+    transform: scale(1.2);
+
+}
+
+.main__btn:focus{
+    box-shadow: 0 0 2px aqua;
+}
+
+.btn__search {
+    background-image: url(../img/search.png);
+    align-self: flex-end;
+}
+
+.burger__btn {
+    background-image: url(../img/burger.png);
+}
+
+.btn__call {
+    background-image: url(../img/call.png);
+}
+
+.btn__chat {
+    background-image: url(../img/chat.png);
+}
+
+.btn__profile {
+    background-image: url(../img/profile.png);
+}
+
+.menu__burger {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu__burger .logo__img:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.service__list {
+    margin-top: 24px;
+}
+
+.service__list li {
+    list-style: none;
+    margin-bottom: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+}
+.service__list li > a{
+    text-decoration: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+}
+
+.service__list li:first-child a{
+    color: #7E7E82;
+}
+
+.service__list li:first-child {
+    border-left: 4px solid #41F6D7;
+}
+
+.service__list li:not(:first-child) {
+    padding-left: 28px;
+}
+
+.service__list li:hover {
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+
+.service__list li:hover a {
+    color: #7E7E82;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 876px;
+}
+
+.menu__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu__bottom > .main__btn{
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+
+.contact {
+    padding-left: 24px;
+}
+
+.phone {
+    padding-left: 24px;
+    font-weight: 700;
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+}
+
+.lang {
+    padding-left: 24px;
+    padding-top: 32px;
+    display: inline-block;
+}
+
+.lang a:first-child {
+    color: #7E7E82;
+}
+
+.lang a:hover {
+    background-color: #41F6D7;
+}
+
+.phone:hover,
+.contact:hover {
+    text-decoration: underline;
+}
