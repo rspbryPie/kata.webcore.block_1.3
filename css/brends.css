@@ -242,6 +242,10 @@ body {
         right: 108px;
     }
     
+    .swiper-pagination {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1120px){
@@ -277,4 +281,8 @@ body {
 
 .section--desc {
     max-height: 248px;
+}
+
+.hidden {
+    display: none;
 }
