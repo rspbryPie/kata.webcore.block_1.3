@@ -1,38 +1,49 @@
 let swiperCont = document.querySelector('.swiper');
 let swiperWrapper = document.querySelector('.swiper-wrapper');
 let swiperSlide = document.querySelector('.swiper-slide');
+let swiperPag = document.querySelector('.swiper-pagination');
 
-console.log(swiperCont);
-console.log(swiperWrapper);
-console.log(swiperSlide);
-
-if (window.innerWidth === 320) {
-    new Swiper('.brends__container', {
+// if (window.innerWidth === 320) {
+const swiper = new Swiper('.brends__container', {
         // slidesPerView: 1,
         // spaceBetween: 20,
-        // loop: true,
+        loop: false,
         // slideClass: 'brend__item',
-        enabled: true,
+        enabled: false,
         width: 240,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
+        breakpoints: {
+            // when window width is <= 320px
+            
+            // when window width is <= 640px
+            320: {
+                enabled: true,
+                slidesPerView: 1,
+
+            }
+        }
     });
 
-} else if (window.innerWidth >= 768) {
-    // let swiperCont = document.querySelector('.swiper');
+// } else
+    if (window.innerWidth >= 768) {
+    swiper.destroy();
+    // let swiperPag = document.querySelector('.swiper-pagination');
     // let swiperWrapper = document.querySelector('.swiper-wrapper');
     // let swiperSlide = document.querySelector('.swiper-slide');
     swiperCont.classList.remove('swiper');
     swiperWrapper.classList.remove('swiper-wrapper');
+    swiperPag.classList.add('hidden');
     // swiperSlide.classList.remove('swiper-slide');
     // console.log(window.innerHeight);
     let elements = document.querySelectorAll('.swiper-slide');
     for (let i=0; i < elements.length; i++) {
         let element = elements[i];
         element.classList.remove('swiper-slide');
-    }
+    };
+    // window.location.reload();
 };
 
 showHide.onclick = function() {
@@ -73,6 +84,9 @@ showHide.onclick = function() {
     
 };
 
+window.addEventListener("resize", function(){
+    window.location.reload();
+});
 
 // window.addEventListener("resize", function(){
 //         console.log('width: ' + window.innerWidth + 'px. height:  ' + window.innerHeight);
