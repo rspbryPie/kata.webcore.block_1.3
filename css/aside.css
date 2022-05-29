@@ -84,6 +84,7 @@ body {
     align-items: center;
 }
 .main__btn {
+    cursor: pointer;
     margin: 24px;
     width: 40px;
     height: 40px;
@@ -132,6 +133,7 @@ body {
     transition: 0.5s;
 }
 .service__list {
+    cursor: pointer;
     margin-top: 24px;
 }
 
